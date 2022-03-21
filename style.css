@@ -18,17 +18,17 @@ body {
     font-family: "Roboto", sans-serif;
 }
 
-header,
+ header,
 footer,
 #pagina {
     width: 90%;
     max-width: 1200px;
-    /* margin: 20px auto; */
+    margin: 20px auto; 
     margin-top: 20px;
     margin-bottom: 20px;
     margin-left: auto;
     margin-right: auto;
-}
+} 
 
 #pagina {
     min-height: 300px;
@@ -41,22 +41,28 @@ ul {
 #imgaside{
     width: 80%;
     display: flex;
+    
 }
 
 
 /* estilizar logo y nav */
 
 .logo {
-    width: 100px;
+    height: 100px;
+    width: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 header {
+    
     display: flex;
     justify-items: flex-start;
     flex-wrap: wrap;
     align-items: center;
     background-color: #052968;
-    padding: 0 16px;
+    padding:  16px;
     /* padding-top: 0;
     padding-bottom: 0;
     padding-left: 16px;
@@ -125,7 +131,7 @@ header nav ul {
 footer {
     display: flex;
     flex-direction: row;
-    justify-content: space-evenly;
+    justify-content: space-around;
     background-color:#052968;
     text-align: center;
     padding: 20px;
@@ -146,4 +152,9 @@ footer {
    width: 300px;padding: 20px 0 20px 0;
   
 }
+#footlogo{
+    height: 50px;
+    width: auto;
+}
+
 

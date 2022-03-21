@@ -1,0 +1,229 @@
+$fuentePrincipal: "Roboto", sans-serif;
+$fuenteSecundaria: "Roboto", sans-serif;
+$fuenteSecundariaweight: bold;
+
+$colornegro: #000;
+$bg-brand: #052968;
+$bg-nav: white;
+$bg-page: rgb(223, 223, 223);
+$bg-aside: grey;
+
+
+
+
+body{
+    background-color:$bg-page ;
+    font-family: $fuentePrincipal
+}
+
+ header,
+footer,
+#pagina {
+    width: 90%;
+    max-width: 1200px;
+    margin: 20px auto; 
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-left: auto;
+    margin-right: auto;
+} 
+
+#pagina {
+    min-height: 300px;
+}
+
+ul {
+    list-style: none;
+}
+
+#imgaside{
+    width: 90%;
+    display: flex;
+    float: left;
+    
+}
+
+
+/* estilizar logo y nav */
+
+.logo {
+    height: 100px;
+    width: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+    justify-items: center;
+}
+
+header {
+    
+    display: flex;
+    justify-items: flex-start;
+    flex-wrap: wrap;
+    align-items: center;
+    background-color: $bg-brand;
+    padding:  20px;
+    
+}
+
+header nav {
+    width: 100%;
+}
+
+header nav ul {
+    display: flex;
+    justify-content: flex-end;
+    flex-wrap: wrap;
+}
+
+
+/* header nav ul li {
+    float: left;
+} */
+// .navlink{
+//     background-color: $bg-aside;
+//     border: 2px solid $bg-aside
+// }
+.navLink :hover{
+    background-color: $bg-nav;
+    color: $colornegro;
+    border: 3px solid $colornegro;
+    transform: scaleY(1.2) scaleX(1.2) scaleZ(1.5);
+}
+.navLink a {
+    color: $bg-nav;
+    margin: 5px;
+    padding: 5px;
+    text-decoration: none;
+    background-color: $bg-aside;
+    border: 2px solid $bg-aside;
+    border-radius: 20px;
+}
+
+.page {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+h1{
+    border: 2px solid $bg-aside;
+    width: 90%;
+    border-radius: 8px;
+    padding: 5px;
+   
+}
+
+.main{
+    padding: 2px;
+    flex:3;
+}
+
+.main .articlesContainer {
+    width: 100%;
+    padding: 20px 0;
+    margin-right: 1.5%;
+}
+
+.articlesContainer article {
+    width: 90%;
+    background-color: $bg-nav;
+    margin-bottom: 1.5%;
+    padding: 15px;
+    border-radius: 6px;
+}
+h2{
+    color: $colornegro;
+}
+.sidebar {
+    /* width: 30%; */
+    flex: 1;
+    padding: 5px;
+    background-color: $bg-aside;
+    color: $bg-nav;
+    border-radius: 6px;
+    display: flex;
+    justify-content: center;
+}
+
+#footer1 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-content: center;
+    
+
+    background-color:$bg-brand;
+
+    color: $bg-nav;
+    width: 100%;
+   
+}
+#footer2{
+    font-size: small;
+    font-weight: $fuenteSecundariaweight;
+    width: 100%;
+    background-color: $bg-brand;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    
+    color: $bg-nav;
+    margin-top: auto;
+    
+}
+#galcontainer{
+    background-color: $bg-aside;
+    border: 2px solid $bg-aside;
+    border-radius: 10px;
+    padding: 10px;
+    display: flex;
+    padding:10px;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    
+    
+}
+.imggal{
+   width: 300px;padding: 20px 0 20px 0;
+   border: 1px dashed rgba(211, 211, 211, 0.274);
+}
+.imggal :hover{
+    background-color: $bg-brand;
+    border: 2px solid $colornegro
+}   
+#footlogo{
+    height: 50px;
+    width: auto;
+    margin-top: 10%;
+}
+.proyecto{
+    background-color: $bg-aside;
+    height: 100px;
+    display:flex;
+    flex-direction: row;
+    
+    width: 100%;
+    border-radius: 10px;
+    margin: 10px 0px;
+}
+.imgproy{
+    height: 100%;
+
+}
+.proydescrp{
+    margin-left: auto;
+    display: flex;
+    justify-content: flex-end;
+    width: 50%;
+}
+.titproy{
+    display: flex;
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
+    align-content: center;
+    width: 20%;
+    font-weight: $fuenteSecundariaweight;
+}
